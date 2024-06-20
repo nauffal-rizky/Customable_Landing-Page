@@ -1,0 +1,189 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+/* SIMILAR */
+p {
+	font-size: 1.2rem;
+}
+header {
+	background-image: url(./assets/jumbotron.jpg);
+	background-size: cover;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+main,
+.wrapper,
+.desc {
+	display: flex;
+	flex-direction: column;
+}
+nav,
+.toggle-links,
+.social-links,
+.jumbotron,
+section {
+	display: flex;
+}
+.jumbotron,
+section {
+	justify-content: center;
+	align-items: center;
+}
+section {
+	padding: 5rem 0;
+}
+.wrapper {
+	gap: 2rem;
+	max-width: 90%;
+	width: 1000px;
+}
+.title {
+	font-size: 3rem;
+}
+.name {
+	font-size: 2rem;
+	margin: 0 0 0.5rem 0;
+}
+
+/* WEB CHANGER TOGGLEs */
+.web-change-toggle {
+	position: fixed;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	overflow: hidden;
+	transition: 0.3s;
+	z-index: 999;
+}
+.web-change-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding: 0.3rem 0 0 0;
+}
+.web-change-toggle i,
+.web-change-content span {
+	background-color: #fff;
+	font-size: 1.2rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 1px 1px 5px #000;
+}
+
+/* NAVBAR */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+	padding: 2.5rem 2rem;
+	z-index: 2;
+}
+nav a {
+	color: #111;
+}
+nav.fixed {
+	background-color: #111;
+}
+nav.fixed a {
+	color: #fff;
+}
+.logo a {
+	font-size: 1.5rem;
+}
+.logo i {
+	display: block;
+}
+@media (min-width: 576px) {
+	.logo i {
+		display: none;
+	}
+}
+.toggle-links,
+.social-links {
+	gap: 1rem;
+}
+.toggle-links li,
+.social-links li {
+	list-style: none;
+}
+.toggle-links li a,
+.social-links li a {
+	font-size: 1.25rem;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+	height: 100vh;
+}
+.jumbotron .jumbotron-content p:nth-child(1) {
+	font-size: 3rem;
+}
+.jumbotron .jumbotron-content p:nth-child(2) {
+	font-size: 3.5rem;
+}
+
+/* MAIN */
+main {
+	gap: 3rem;
+}
+.about-content,
+.contact-content {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 1.5rem;
+}
+.about-content img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+.check-social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1.5rem 0 0 0;
+}
+.check-btn {
+	font-size: 1.2rem;
+	padding: 0.7rem 1rem;
+}
+.check-social .social-links a {
+	font-size: 1.5rem;
+}
+
+/* CONTACT */
+.contact-content {
+	grid-template-columns: 1fr 1fr;
+}
+.get-in-touch,
+.my-info,
+.info-text,
+.form-center,
+.form-center form,
+.input-box {
+	display: flex;
+	flex-direction: column;
+}
+.get-in-touch > p {
+	margin: 0 0 1rem 0;
+}
+.my-info,
+.info,
+.form-center form {
+	display: flex;
+	gap: 1rem;
+}
+.info {
+	align-items: center;
+}
+.input-box {
+	gap: 0.5rem;
+}
